@@ -1,0 +1,6 @@
+syntax = 'proto3';
+
+message QueryStockCodeResponse {
+  int32 code = 1;
+  repeated string stock_codes = 2;
+}

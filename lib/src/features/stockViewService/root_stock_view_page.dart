@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:stock_heat_map_app/src/features/stockViewService/root_bloc/root_stock_view_bloc.dart';
 import 'package:stock_heat_map_app/src/features/stockViewService/widget/config_dialog.dart';
+// import 'package:graphic/graphic.dart';
 
 import '../../common/custom_dialog.dart';
 
@@ -54,4 +55,25 @@ class _CoreMapWidgetState extends State<CoreMapWidget> {
     return Container();
   }
 }
+
+// class ContentWrapperWidget extends StatefulWidget {
+//   const ContentWrapperWidget({Key? key}) : super(key: key);
+//
+//   @override
+//   State<ContentWrapperWidget> createState() => _ContentWrapperWidgetState();
+// }
+//
+// class _ContentWrapperWidgetState extends State<ContentWrapperWidget> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       child: Chart(
+//         data: [
+//
+//         ],
+//       ),
+//     );
+//   }
+// }
+
 

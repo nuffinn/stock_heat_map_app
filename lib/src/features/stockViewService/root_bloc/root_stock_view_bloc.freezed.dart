@@ -50,15 +50,15 @@ mixin _$RootStockViewEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String selectedStock)? fetchSelectedStock,
-    TResult Function(String query)? searchStockType,
-    required TResult orElse(),
+  TResult Function(String selectedStock)? fetchSelectedStock,
+  TResult Function(String query)? searchStockType,
+  required TResult orElse(),
   }) =>
-      throw _privateConstructorUsedError;
+  throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_FetchSelectedStockEvent value)
-        fetchSelectedStock,
+    fetchSelectedStock,
     required TResult Function(_SearchStockTypeEvent value) searchStockType,
   }) =>
       throw _privateConstructorUsedError;
@@ -70,18 +70,18 @@ mixin _$RootStockViewEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FetchSelectedStockEvent value)? fetchSelectedStock,
-    TResult Function(_SearchStockTypeEvent value)? searchStockType,
-    required TResult orElse(),
+  TResult Function(_FetchSelectedStockEvent value)? fetchSelectedStock,
+  TResult Function(_SearchStockTypeEvent value)? searchStockType,
+  required TResult orElse(),
   }) =>
-      throw _privateConstructorUsedError;
+  throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $RootStockViewEventCopyWith<$Res> {
   factory $RootStockViewEventCopyWith(
-          RootStockViewEvent value, $Res Function(RootStockViewEvent) then) =
-      _$RootStockViewEventCopyWithImpl<$Res>;
+      RootStockViewEvent value, $Res Function(RootStockViewEvent) then) =
+  _$RootStockViewEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -97,8 +97,8 @@ class _$RootStockViewEventCopyWithImpl<$Res>
 /// @nodoc
 abstract class _$FetchSelectedStockEventCopyWith<$Res> {
   factory _$FetchSelectedStockEventCopyWith(_FetchSelectedStockEvent value,
-          $Res Function(_FetchSelectedStockEvent) then) =
-      __$FetchSelectedStockEventCopyWithImpl<$Res>;
+      $Res Function(_FetchSelectedStockEvent) then) =
+  __$FetchSelectedStockEventCopyWithImpl<$Res>;
   $Res call({String selectedStock});
 }
 
@@ -122,7 +122,7 @@ class __$FetchSelectedStockEventCopyWithImpl<$Res>
       selectedStock: selectedStock == freezed
           ? _value.selectedStock
           : selectedStock // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -180,21 +180,21 @@ class _$_FetchSelectedStockEvent implements _FetchSelectedStockEvent {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String selectedStock)? fetchSelectedStock,
-    TResult Function(String query)? searchStockType,
-    required TResult orElse(),
+  TResult Function(String selectedStock)? fetchSelectedStock,
+  TResult Function(String query)? searchStockType,
+  required TResult orElse(),
   }) {
-    if (fetchSelectedStock != null) {
-      return fetchSelectedStock(selectedStock);
-    }
-    return orElse();
+  if (fetchSelectedStock != null) {
+  return fetchSelectedStock(selectedStock);
+  }
+  return orElse();
   }
 
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_FetchSelectedStockEvent value)
-        fetchSelectedStock,
+    fetchSelectedStock,
     required TResult Function(_SearchStockTypeEvent value) searchStockType,
   }) {
     return fetchSelectedStock(this);
@@ -212,20 +212,20 @@ class _$_FetchSelectedStockEvent implements _FetchSelectedStockEvent {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FetchSelectedStockEvent value)? fetchSelectedStock,
-    TResult Function(_SearchStockTypeEvent value)? searchStockType,
-    required TResult orElse(),
+  TResult Function(_FetchSelectedStockEvent value)? fetchSelectedStock,
+  TResult Function(_SearchStockTypeEvent value)? searchStockType,
+  required TResult orElse(),
   }) {
-    if (fetchSelectedStock != null) {
-      return fetchSelectedStock(this);
-    }
-    return orElse();
+  if (fetchSelectedStock != null) {
+  return fetchSelectedStock(this);
+  }
+  return orElse();
   }
 }
 
 abstract class _FetchSelectedStockEvent implements RootStockViewEvent {
   const factory _FetchSelectedStockEvent({required String selectedStock}) =
-      _$_FetchSelectedStockEvent;
+  _$_FetchSelectedStockEvent;
 
   String get selectedStock;
   @JsonKey(ignore: true)
@@ -236,8 +236,8 @@ abstract class _FetchSelectedStockEvent implements RootStockViewEvent {
 /// @nodoc
 abstract class _$SearchStockTypeEventCopyWith<$Res> {
   factory _$SearchStockTypeEventCopyWith(_SearchStockTypeEvent value,
-          $Res Function(_SearchStockTypeEvent) then) =
-      __$SearchStockTypeEventCopyWithImpl<$Res>;
+      $Res Function(_SearchStockTypeEvent) then) =
+  __$SearchStockTypeEventCopyWithImpl<$Res>;
   $Res call({String query});
 }
 
@@ -260,7 +260,7 @@ class __$SearchStockTypeEventCopyWithImpl<$Res>
       query: query == freezed
           ? _value.query
           : query // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -317,21 +317,21 @@ class _$_SearchStockTypeEvent implements _SearchStockTypeEvent {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String selectedStock)? fetchSelectedStock,
-    TResult Function(String query)? searchStockType,
-    required TResult orElse(),
+  TResult Function(String selectedStock)? fetchSelectedStock,
+  TResult Function(String query)? searchStockType,
+  required TResult orElse(),
   }) {
-    if (searchStockType != null) {
-      return searchStockType(query);
-    }
-    return orElse();
+  if (searchStockType != null) {
+  return searchStockType(query);
+  }
+  return orElse();
   }
 
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_FetchSelectedStockEvent value)
-        fetchSelectedStock,
+    fetchSelectedStock,
     required TResult Function(_SearchStockTypeEvent value) searchStockType,
   }) {
     return searchStockType(this);
@@ -349,20 +349,20 @@ class _$_SearchStockTypeEvent implements _SearchStockTypeEvent {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FetchSelectedStockEvent value)? fetchSelectedStock,
-    TResult Function(_SearchStockTypeEvent value)? searchStockType,
-    required TResult orElse(),
+  TResult Function(_FetchSelectedStockEvent value)? fetchSelectedStock,
+  TResult Function(_SearchStockTypeEvent value)? searchStockType,
+  required TResult orElse(),
   }) {
-    if (searchStockType != null) {
-      return searchStockType(this);
-    }
-    return orElse();
+  if (searchStockType != null) {
+  return searchStockType(this);
+  }
+  return orElse();
   }
 }
 
 abstract class _SearchStockTypeEvent implements RootStockViewEvent {
   const factory _SearchStockTypeEvent({required String query}) =
-      _$_SearchStockTypeEvent;
+  _$_SearchStockTypeEvent;
 
   String get query;
   @JsonKey(ignore: true)
@@ -396,8 +396,8 @@ mixin _$RootStockViewData {
 /// @nodoc
 abstract class $RootStockViewDataCopyWith<$Res> {
   factory $RootStockViewDataCopyWith(
-          RootStockViewData value, $Res Function(RootStockViewData) then) =
-      _$RootStockViewDataCopyWithImpl<$Res>;
+      RootStockViewData value, $Res Function(RootStockViewData) then) =
+  _$RootStockViewDataCopyWithImpl<$Res>;
   $Res call({bool isSelectedStock});
 }
 
@@ -418,7 +418,7 @@ class _$RootStockViewDataCopyWithImpl<$Res>
       isSelectedStock: isSelectedStock == freezed
           ? _value.isSelectedStock
           : isSelectedStock // ignore: cast_nullable_to_non_nullable
-              as bool,
+      as bool,
     ));
   }
 }
@@ -427,7 +427,7 @@ class _$RootStockViewDataCopyWithImpl<$Res>
 abstract class _$DataCopyWith<$Res>
     implements $RootStockViewDataCopyWith<$Res> {
   factory _$DataCopyWith(_Data value, $Res Function(_Data) then) =
-      __$DataCopyWithImpl<$Res>;
+  __$DataCopyWithImpl<$Res>;
   @override
   $Res call({bool isSelectedStock});
 }
@@ -449,7 +449,7 @@ class __$DataCopyWithImpl<$Res> extends _$RootStockViewDataCopyWithImpl<$Res>
       isSelectedStock: isSelectedStock == freezed
           ? _value.isSelectedStock
           : isSelectedStock // ignore: cast_nullable_to_non_nullable
-              as bool,
+      as bool,
     ));
   }
 }
@@ -535,11 +535,11 @@ mixin _$RootStockViewState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(_Data data)? loading,
-    TResult Function(_Data data)? loaded,
-    required TResult orElse(),
+  TResult Function(_Data data)? loading,
+  TResult Function(_Data data)? loaded,
+  required TResult orElse(),
   }) =>
-      throw _privateConstructorUsedError;
+  throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoadingState value) loading,
@@ -554,11 +554,11 @@ mixin _$RootStockViewState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadingState value)? loading,
-    TResult Function(_LoadedState value)? loaded,
-    required TResult orElse(),
+  TResult Function(_LoadingState value)? loading,
+  TResult Function(_LoadedState value)? loaded,
+  required TResult orElse(),
   }) =>
-      throw _privateConstructorUsedError;
+  throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $RootStockViewStateCopyWith<RootStockViewState> get copyWith =>
@@ -568,8 +568,8 @@ mixin _$RootStockViewState {
 /// @nodoc
 abstract class $RootStockViewStateCopyWith<$Res> {
   factory $RootStockViewStateCopyWith(
-          RootStockViewState value, $Res Function(RootStockViewState) then) =
-      _$RootStockViewStateCopyWithImpl<$Res>;
+      RootStockViewState value, $Res Function(RootStockViewState) then) =
+  _$RootStockViewStateCopyWithImpl<$Res>;
   $Res call({_Data data});
 }
 
@@ -590,7 +590,7 @@ class _$RootStockViewStateCopyWithImpl<$Res>
       data: data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as _Data,
+      as _Data,
     ));
   }
 }
@@ -599,8 +599,8 @@ class _$RootStockViewStateCopyWithImpl<$Res>
 abstract class _$LoadingStateCopyWith<$Res>
     implements $RootStockViewStateCopyWith<$Res> {
   factory _$LoadingStateCopyWith(
-          _LoadingState value, $Res Function(_LoadingState) then) =
-      __$LoadingStateCopyWithImpl<$Res>;
+      _LoadingState value, $Res Function(_LoadingState) then) =
+  __$LoadingStateCopyWithImpl<$Res>;
   @override
   $Res call({_Data data});
 }
@@ -624,7 +624,7 @@ class __$LoadingStateCopyWithImpl<$Res>
       data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as _Data,
+      as _Data,
     ));
   }
 }
@@ -680,14 +680,14 @@ class _$_LoadingState implements _LoadingState {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(_Data data)? loading,
-    TResult Function(_Data data)? loaded,
-    required TResult orElse(),
+  TResult Function(_Data data)? loading,
+  TResult Function(_Data data)? loaded,
+  required TResult orElse(),
   }) {
-    if (loading != null) {
-      return loading(data);
-    }
-    return orElse();
+  if (loading != null) {
+  return loading(data);
+  }
+  return orElse();
   }
 
   @override
@@ -711,14 +711,14 @@ class _$_LoadingState implements _LoadingState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadingState value)? loading,
-    TResult Function(_LoadedState value)? loaded,
-    required TResult orElse(),
+  TResult Function(_LoadingState value)? loading,
+  TResult Function(_LoadedState value)? loaded,
+  required TResult orElse(),
   }) {
-    if (loading != null) {
-      return loading(this);
-    }
-    return orElse();
+  if (loading != null) {
+  return loading(this);
+  }
+  return orElse();
   }
 }
 
@@ -737,8 +737,8 @@ abstract class _LoadingState implements RootStockViewState {
 abstract class _$LoadedStateCopyWith<$Res>
     implements $RootStockViewStateCopyWith<$Res> {
   factory _$LoadedStateCopyWith(
-          _LoadedState value, $Res Function(_LoadedState) then) =
-      __$LoadedStateCopyWithImpl<$Res>;
+      _LoadedState value, $Res Function(_LoadedState) then) =
+  __$LoadedStateCopyWithImpl<$Res>;
   @override
   $Res call({_Data data});
 }
@@ -762,7 +762,7 @@ class __$LoadedStateCopyWithImpl<$Res>
       data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as _Data,
+      as _Data,
     ));
   }
 }
@@ -818,14 +818,14 @@ class _$_LoadedState implements _LoadedState {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(_Data data)? loading,
-    TResult Function(_Data data)? loaded,
-    required TResult orElse(),
+  TResult Function(_Data data)? loading,
+  TResult Function(_Data data)? loaded,
+  required TResult orElse(),
   }) {
-    if (loaded != null) {
-      return loaded(data);
-    }
-    return orElse();
+  if (loaded != null) {
+  return loaded(data);
+  }
+  return orElse();
   }
 
   @override
@@ -849,14 +849,14 @@ class _$_LoadedState implements _LoadedState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadingState value)? loading,
-    TResult Function(_LoadedState value)? loaded,
-    required TResult orElse(),
+  TResult Function(_LoadingState value)? loading,
+  TResult Function(_LoadedState value)? loaded,
+  required TResult orElse(),
   }) {
-    if (loaded != null) {
-      return loaded(this);
-    }
-    return orElse();
+  if (loaded != null) {
+  return loaded(this);
+  }
+  return orElse();
   }
 }
 
